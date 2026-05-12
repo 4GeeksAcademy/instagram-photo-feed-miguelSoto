@@ -1,12 +1,24 @@
 img {
-    /* Mejora la calidad de imagen al redimensionar (suavizado) */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    
-    /* Evita la deformación al ajustar tamaño */
-    object-fit: cover; 
-    
-    /* Asegura que no sea más grande que su contenedor */
-    max-width: 100%;
-    height: auto;
+  width: 100%; /* O el tamaño deseado */
+  height: auto;
+  object-fit: fill;
+
+  
+}
+
+
+.nav-link.active i {
+    color: #007bff !important; /* Azul */
+}
+
+/* 2. Color del ícono por defecto (cuando NO está presionada) */
+.nav-link i {
+    color: #6c757d; /* Gris o color neutro */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* 3. (Opcional) Eliminar el fondo gris/blanco que Bootstrap pone por defecto */
+.nav-tabs .nav-link.active {
+    background-color: transparent !important;
+    border-color: transparent transparent #007bff !important; /* Solo una línea abajo */
 }
