@@ -1,0 +1,12 @@
+img {
+    /* Mejora la calidad de imagen al redimensionar (suavizado) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    
+    /* Evita la deformación al ajustar tamaño */
+    object-fit: cover; 
+    
+    /* Asegura que no sea más grande que su contenedor */
+    max-width: 100%;
+    height: auto;
+}
